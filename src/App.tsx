@@ -301,7 +301,7 @@ function App() {
       <BoxGn sx={{ display: 'flex', flexDirection: 'column' }}>
         <AppBar sx={{ backgroundColor: 'rgb(20,20,20,0.9)' }} position="static">
           <Toolbar>
-            <Typography variant="h1">Profolio</Typography>
+            <Typography variant="h1">Portfolio</Typography>
           </Toolbar>
         </AppBar>
         <BoxGn ref={elt_MinimapOn_ref} sx={{ display: 'flex', position: 'relative' }}>
