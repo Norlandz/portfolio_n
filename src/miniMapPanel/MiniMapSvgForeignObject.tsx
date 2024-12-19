@@ -3,7 +3,7 @@ import Draggable from 'react-draggable';
 // import { Box } from '@mui/system';
 import { OpenWith } from '@mui/icons-material';
 import styles from '../scss/index.module.css';
-import { BoxGn } from './BoxGn';
+import { BoxGn } from '../utilComponent/BoxGn';
 // import * as d3 from 'd3';
 
 // const initialNodes = [

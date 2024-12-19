@@ -354,7 +354,9 @@ class Fragment {
       this.ctx.lineTo(this.v2[0], this.v2[1]);
       this.ctx.closePath();
       this.ctx.clip();
-      this.ctx.drawImage(image, 0, 0);
+
+      const box = image.getBoundingClientRect();
+      this.ctx.drawImage(image, 0, 0, box.width, box.height);
     }
   }
 }

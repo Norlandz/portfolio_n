@@ -4,7 +4,7 @@ import Draggable from 'react-draggable';
 import { OpenWith } from '@mui/icons-material';
 // import html2canvas from 'html2canvas';
 import * as htmlToImage from 'html-to-image';
-import { BoxGn } from './BoxGn';
+import { BoxGn } from '../utilComponent/BoxGn';
 
 // jquery - How to take screenshot of a div with JavaScript? - Stack Overflow
 // https://stackoverflow.com/questions/6887183/how-to-take-screenshot-of-a-div-with-javascript
