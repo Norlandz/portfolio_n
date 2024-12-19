@@ -64,7 +64,7 @@ export const ProjectInfoRcompDataGrid: React.FC<{
           max={1.5}
           step={0.1}
           value={scale_Proj_rst}
-          onChange={(ev: any, num: number) => set_scale_Proj_rst(num)}
+          onChange={(ev: Event, num: number | number[]) => set_scale_Proj_rst(num as number)}
           marks
           valueLabelDisplay="auto"
         />
