@@ -32,6 +32,8 @@ let seqAddedDate = 0;
 export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
   new ProjectInfo(
     'NttDrawAndChat',
+    `在线协同编辑文件
+支持: 画图 文本框 保存 撤销`,
     [
       //
       'https://github.com/Norlandz/NttDrawAndChat',
@@ -51,49 +53,61 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       ___assets_images_ori_copy_NttDrawAndChat_DrawAndChatApp_20230518_2322_26418_LoadSaveFile__mp4,
     ],
     ++seqAddedDate,
-    48, // lvOfComplexity
-    2.5
+    48,
+    2.5,
+    'Java, JavaFx, Kafka, Mysql, Hibernate, Spring',
+    `- Event sourcing`
   ),
+  // new ProjectInfo(
+  //   'TrafficSystem',
+  //   [
+  //     //
+  //     'https://github.com/Norlandz/TrafficSystem',
+  //   ],
+  //   [
+  //     //
+  //     new ImgInfo(___assets_images_ori_copy_TrafficSystem_TrafficSystem_Demo_png),
+  //   ],
+  //   [
+  //     //
+  //     ___assets_images_ori_copy_TrafficSystem_TrafficSystem_20230609_003641_demo01_CrossBlock_Complex_mp4,
+  //     ___assets_images_ori_copy_TrafficSystem_TrafficSystem_20230609_004856_demo02_AlignedCube_ComplexMoving_TrafficLight_mp4,
+  //   ],
+  //   ++seqAddedDate,
+  //   42,
+  //   1
+  // ),
   new ProjectInfo(
-    'TrafficSystem',
+    'TrafficSystemMock',
+    `创建交通地图 移动载具 速度侦测`,
     [
       //
       'https://github.com/Norlandz/TrafficSystem',
-    ],
-    [
-      //
-      new ImgInfo(___assets_images_ori_copy_TrafficSystem_TrafficSystem_Demo_png),
-    ],
-    [
-      //
-      ___assets_images_ori_copy_TrafficSystem_TrafficSystem_20230609_003641_demo01_CrossBlock_Complex_mp4,
-      ___assets_images_ori_copy_TrafficSystem_TrafficSystem_20230609_004856_demo02_AlignedCube_ComplexMoving_TrafficLight_mp4,
-    ],
-    ++seqAddedDate,
-    42, // lvOfComplexity
-    1
-  ),
-  new ProjectInfo(
-    'TrafficSystemMock',
-    [
-      //
       'https://github.com/Norlandz/TrafficSystemMockJs',
       'https://github.com/Norlandz/TrafficSystemMock',
     ],
     [
       //
+      new ImgInfo(___assets_images_ori_copy_TrafficSystem_TrafficSystem_Demo_png, 2, 2),
       new ImgInfo(___assets_images_ori_copy_TrafficSystemMock_TrafficSystemMock_Demo_20230714_230239Z_Intro__png, 2, 2),
     ],
     [
       //
+      ___assets_images_ori_copy_TrafficSystem_TrafficSystem_20230609_003641_demo01_CrossBlock_Complex_mp4,
+      ___assets_images_ori_copy_TrafficSystem_TrafficSystem_20230609_004856_demo02_AlignedCube_ComplexMoving_TrafficLight_mp4,
       ___assets_images_ori_copy_TrafficSystemMock_TrafficSystemMock_Demo_20230714_225153_Intro__mp4,
     ],
     ++seqAddedDate,
-    55, // lvOfComplexity
-    1.5
+    55,
+    1.5,
+    'Java, JavaFx, Hibernate, Mysql, Spring, Javascript, Typescript, React, SpringMvc, Websocket, RxJava, H2, TestFx, JUnit',
+    `- 寻路
+- 碰撞检测
+- 动画`
   ),
   new ProjectInfo(
     'TextHighlighter',
+    `文本查询高亮`,
     [
       //
       'https://github.com/Norlandz/TextHighlighter',
@@ -106,10 +120,14 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       //
     ],
     ++seqAddedDate,
-    35 // lvOfComplexity
+    35,
+    undefined,
+    'Google Chrome Extension, DOM Tree, Regex',
+    `- Overlap resolve`
   ),
   new ProjectInfo(
     'DrawOnWebpage',
+    undefined,
     [
       //
       'https://github.com/Norlandz/DrawOnWebpage',
@@ -122,10 +140,11 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       //
     ],
     ++seqAddedDate,
-    2 // lvOfComplexity
+    2
   ),
   new ProjectInfo(
     'code_comment_remover-ui',
+    `移除项目所有代码注释 (java/js/tsx)`,
     [
       //
       'https://github.com/Norlandz/code_comment_remover-ui',
@@ -141,11 +160,20 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       //
     ],
     ++seqAddedDate,
-    57, // lvOfComplexity
-    2
+    57,
+    2,
+    'Nextjs, Expressjs, Fastify, Spring, Java-parser, Typescript-parser, AWS, CloudFormation, Jenkins, Docker, Nginx',
+    `- AWS 云端部署; 4个 EC2 instances;
+- Vpc, Subet (子网), SecurityGroup, IAM: 保护后端服务.
+- NatInstance, ApiGateway (网关), ReverseProxy (反向代理): 处理和路由请求.
+- Cloudformation: IAC.
+- Jenkins: CI/CD (持续部署).
+- Docker: 托管 & 部署 微服务 & cloud Jenkins Agents.
+- RestApi: 微服务通信.`
   ),
   new ProjectInfo(
     'virtualfoldervsc',
+    `虚拟文件夹`,
     [
       //
       'https://marketplace.visualstudio.com/items?itemName=norlz.virtualfoldervsc',
@@ -159,10 +187,14 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       //
     ],
     ++seqAddedDate,
-    22 // lvOfComplexity
+    22,
+    undefined,
+    'VSCode Extension',
+    ``
   ),
   new ProjectInfo(
     'TLightChat',
+    '实时视频语音',
     [
       //
       'https://tlightchat.netlify.app',
@@ -182,11 +214,19 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       ___assets_images_ori_copy_TLightChat_TLightChat_demo___20231226_222723_speedup__mp4,
     ],
     ++seqAddedDate,
-    62, // lvOfComplexity
-    3
+    62,
+    3,
+    'Typescript, React, Expressjs, WebRtc, WebSocket, Socketio, Redux, Xstate, Jest, React-Testing-Library, Auth0, Prismajs, Postgresql, Zod, MaterialUi, AWS, Nginx',
+    `- Event driven (事件驱动)
+- Signal server 通信
+- AWS & Netlify 云端托管
+- SFU server (mediasoup)
+- State machine (状态机)
+- 端到端测试`
   ),
   new ProjectInfo(
     'infection_data_cov_it',
+    undefined,
     [
       //
       'https://github.com/Norlandz/infection_data_cov_it',
@@ -199,10 +239,14 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       //
     ],
     ++seqAddedDate,
-    9 // lvOfComplexity
+    9,
+    undefined,
+    'Excel Vba, PowerQuery, PowerBI',
+    ``
   ),
   new ProjectInfo(
     'portfolio_n',
+    undefined,
     [
       //
       'https://norlandz.github.io/portfolio_n/dist/index.html',
@@ -215,10 +259,11 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       //
     ],
     ++seqAddedDate,
-    11 // lvOfComplexity
+    11
   ),
   new ProjectInfo(
     'ChromeCopy',
+    undefined,
     [
       //
       'https://github.com/Norlandz/ChromeCopy',
@@ -230,10 +275,14 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       //
     ],
     ++seqAddedDate,
-    8 // lvOfComplexity
+    8,
+    undefined,
+    'Google Chrome Extension',
+    ``
   ),
   new ProjectInfo(
     'voiceToText-whisper',
+    undefined,
     [
       //
       'https://github.com/Norlandz/voiceToText-whisper',
@@ -245,10 +294,14 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       //
     ],
     ++seqAddedDate,
-    3 // lvOfComplexity
+    3,
+    undefined,
+    'AI',
+    `- 语音转文字字幕`
   ),
   new ProjectInfo(
     'ocr-sentence-ui',
+    `手写文字识别`,
     [
       //
       'https://github.com/Norlandz/ocr-sentence-ui',
@@ -262,7 +315,9 @@ export const arr_ProjectInfo_ori: readonly ProjectInfo[] = [
       //
     ],
     ++seqAddedDate,
-    40, // lvOfComplexity
-    1.5
+    40,
+    1.5,
+    'Vue3, Python, FastApi, Pandas, Pytorch, CRNN, CTC, Machine Learning',
+    `- 手写文字 ocr, CRNN + CTC`
   ),
 ].sort((a, b) => -(a.lvOfComplexity - b.lvOfComplexity));

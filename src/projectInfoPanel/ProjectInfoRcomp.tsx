@@ -9,6 +9,8 @@ import { ProjectImgPart } from './ProjectImgPart';
 import { createRipple } from '../rippleEffect/RippleEffect';
 import { muitheme_ImageList } from './style';
 import { ProjectInfo } from './ProjectInfo';
+import { ProjectTechStackPart } from './ProjectTechStackPart';
+import { ProjectIntroPart } from './ProjectIntroPart';
 
 export const ProjectInfoRcomp: React.FC<{ projectInfo: ProjectInfo; scale_Proj_rst: number }> = (props) => {
   return (
@@ -100,6 +102,7 @@ export const ProjectInfoRcomp: React.FC<{ projectInfo: ProjectInfo; scale_Proj_r
           }}
         >
           <ProjectTitlePart projectInfo={props.projectInfo} />
+          <ProjectIntroPart projectInfo={props.projectInfo} />
           <ProjectLinkPart projectInfo={props.projectInfo} />
         </BoxGn>
         {/* <Paper
@@ -112,6 +115,7 @@ export const ProjectInfoRcomp: React.FC<{ projectInfo: ProjectInfo; scale_Proj_r
           > */}
         <ProjectImgPart projectInfo={props.projectInfo} />
         <ProjectVidPart projectInfo={props.projectInfo} />
+        <ProjectTechStackPart projectInfo={props.projectInfo} />
       </Paper>
     </ThemeProvider>
   );
